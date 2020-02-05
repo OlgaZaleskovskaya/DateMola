@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" ontent="width=device-width">
+    <title>DataMola Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/fibo.js"></script>
+    <script defer src="js/uniq.js"></script>
+    <script defer src="js/permute.js"></script>
+    <script defer src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <h3>Test application for DataMola</h1>
+        <div class="btn-group">
+            <button type="button" id="fibo" title = "Calculate Fibonacci number">Fibonacci</button>
+            <button type="button" id="uniq" title = "Select uniq numbers">Uniq</button>
+            <button type="button" id="permute" title = "String Permutation">Permute</button>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <button title="Close window" class="close">x</button>
+                <div id="content">Some content in the Modal..</div>
+            </div>
+        </div>
+        <!-- Fibonacci -->
+        <div id="fiboContent" style="display: none">
+            <form action=# name="fiboForm" id="fiboForm">
+                <h5>Fibbonacci number</h5>
+                <p>Enter any Integer number > 0</p>
+                <input autofocus id="fiboNumber" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required
+                    type="number" step="1" min="0" max="30" placeholder="Any natural number">
+                <button type="button" id="fiboSubmit">OK</button>
+               
+            </form>
+            <p>Fibonacci number is: &nbsp; <span id="fiboResult"></span> </p>
+           
+        </div>
+        <!-- End Fibonacci -->
+
+        <!-- Uniq numbers -->
+        <div id="uniqContent" style="display: none">
+            <form action=# name="uniqForm" id="uniqForm">
+                <h5>Uniq numbers</h5>
+                <p>Enter any amount of any numbers.</p>
+                <p>Initial Array: <span id="initialArray"></span></p>
+                <input autofocus id="numberSubmit" required type="number" placeholder="Any number">
+                <button  title = "add element to array" type="button" id="onNumberSubmit">Add element to array</button>
+               <br> <button  title = "get uniq numbers" type="button" id="onGetUniqNumbers">Get uniq array</button>
+            </form>
+            <p> Uniq numbers: &nbsp;<span id="uniqResult"></span></p>
+        </div>
+        <!-- End uniq numbers -->
+        <!-- Permute string -->
+        <div id="permuteContent" style="display: none">
+            <form action=# name="permuteForm" id="permuteForm">
+                <h5>Permutations</h5>
+                <p>Enter any string</p>
+                <input autofocus id="initialString" required type="text" placeholder="Any string">
+                <button title = "get permutation" type="button" id="onStringSubmit">Get</button>
+            </form>
+            <p>Result: </p>
+            <p style = "margin-top: 2em" id="permuteResult"></p>
+           
+        </div>
+        <!-- End permute string  -->
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    font-size: 0.9em;
+    }
+
+  .modal {
+    display: none;
+    position: fixed; 
+    padding-top: 50px;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    position: relative; 
+    background-color: white;
+    padding: 20px; 
+    margin: auto; 
+    width: 75%; 
+    height: auto;
+  }
+
+  div.btn-group{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  button:hover{
+    background: rgb(201, 242, 245);
+  }
+  
+  h3{
+    text-align: center;
+    margin-top: 50px;
+  }
+  h5{
+    margin-bottom: 1em;
+  }
+
+  p{
+    margin: 0;
+    font-size: 0.7em;
+    font-style: italic;
+  }
+
+  span{
+    color: red;
+  }
+  
+input{
+    width: 20em;
+}
+button.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: 0;
+  font-weight: bold;
+}
